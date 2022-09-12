@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: dimgray;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+.menu{
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style: none;
+    font-size: 30px;
+    background-color: black;
+
+}
+.menu li{
+    display: inline;
+    margin-right: 20px;
+}
+.menu li a{
+    color: rgb(247, 240, 240);
+    text-decoration: none;
+}
+.menuitem.active a{   
+    text-decoration: underline;
+}
+.logo li{
+    display: inline;
+    margin-right: 20px;
+}
+main{
+    
+}
+.trekkentandil{
+    width: 90%;
+    height: 200px;
+    background-image: url("./../Imagenes/artu1.jpg");     
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 25%;
+    background-color: blue;
+    padding-left: 30px;
+    padding-top: 40px;
+    margin-inline: 5%;
+}
+.trekkentandil h1{
+    text-align: center center;
+    line-height: 30px; 
+    color: rgb(27, 25, 25);
+    font-size: 35px;
+}
+
+
+/* INDEX */
+
+.caja{
+    font-family: 'Noto Serif', serif;
+    width: 90%;    
+    background-color: rgb(62, 59, 65);
+    padding: 25px 25px 25px 25px;
+    border-radius: 10px;
+    border-style: double;
+    margin-inline: 5%;
+    padding-inline: 20px;  
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+    "imagen titulo"
+    "imagen parrafo";    
+}
+.caja.fotocaja{
+    grid-area: imagen;
+}
+.caja.texto h2{
+    grid-area: titulo;
+}
+.caja.texto p{
+    grid-area: parrafo;    
+    overflow: auto;
+}
+.caja p{
+    text-overflow: clip;
+    line-height: 30px;
+}
+.fotocaja{
+    width: 100%;
+}
+.video{
+    width: 100%;    
+}
+
+.texto{
+    flex-direction: column;
+    padding-left: 40px;
+    margin: 20px 20px 20px 20px;
+}
+.texto h2{
+    padding-bottom: 20px;
+}
+
+/* PRODUCTOS */
+
+.caja2{
+    margin-inline: 10%;
+    padding-inline: 20px;  
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(62, 59, 65);
+    border-radius: 10px;
+    border-style: double;
+    padding: 25px 25px 25px 25px;
+    padding-inline: 20px;
+
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "tit2   tit2"
+    "img2   parr2"; 
+}
+.titulo2{
+    grid-area: tit2;
+}
+.prodfoto{
+    grid-area: img2;
+}
+.texto2__p{
+    grid-area: parr2;
+}
+
+.prodfoto{
+    width: 100px;    
+    margin-left: 20%;
+}
+.texto2__p{
+    text-overflow: clip;
+    font-size: 1rem;
+    margin-top: 15px;
+    justify-content: center;
+    }
+.titulo2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+
+/* FOOTER */
+
+footer{
+    display: grid;
+    grid-template-columns: 80% min-content 1fr;
+    grid-template-rows: 80% min-content  1fr;
+    grid-template-areas:
+    "titulo img2 tel"
+    "titulo img1 link";
+    }
+footer h3{
+    grid-area: titulo;
+}
+footer .finsta{
+    grid-area: img1;
+}
+footer a{
+    grid-area: link;
+}
+footer .fwapp{
+    grid-area: img2;
+}
+footer p{
+    grid-area: tel;
+}
+
+/* MediaQueries */
+
+
+@media screen and (max-width:768px) {
+    .caja{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ANIMACIONES */
+
+.caja2{
+   transition: 1s;
+   transition-timing-function: ease;
+}
+.caja2:hover{
+    scale: 1.15;
+    color: rgb(226, 223, 220);
+
+}
+
