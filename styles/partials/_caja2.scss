@@ -1,0 +1,42 @@
+.caja2{
+    margin-inline: 10%;
+    padding-inline: 20px;  
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(62, 59, 65);
+    border-radius: 10px;
+    border-style: double;
+    padding: 25px 25px 25px 25px;
+    padding-inline: 20px;
+
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "tit2   tit2"
+    "img2   parr2"; 
+}
+.titulo2{
+    grid-area: tit2;
+}
+.prodfoto{
+    grid-area: img2;
+}
+.texto2__p{
+    grid-area: parr2;
+}
+
+.prodfoto{
+    width: 100px;    
+    margin-left: 20%;
+}
+.texto2__p{
+    text-overflow: clip;
+    font-size: 1rem;
+    margin-top: 15px;
+    justify-content: center;
+    }
+.titulo2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}

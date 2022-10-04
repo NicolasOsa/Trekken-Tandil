@@ -1,0 +1,48 @@
+.caja{
+    font-family: 'Noto Serif', serif;
+    width: 90%;    
+    background-color: rgb(62, 59, 65);
+    padding: 25px 25px 25px 25px;
+    border-radius: 10px;
+    border-style: double;
+    margin-inline: 5%;
+    padding-inline: 20px;  
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+    "imagen titulo"
+    "imagen parrafo";    
+}
+.caja.fotocaja{
+    grid-area: imagen;
+}
+.caja.texto h2{
+    grid-area: titulo;
+}
+.caja.texto p{
+    grid-area: parrafo;    
+    overflow: auto;
+}
+.caja p{
+    text-overflow: clip;
+    line-height: 30px;
+}
+.fotocaja{
+    width: 100%;
+}
+.video{
+    width: 100%;    
+}
+
+.texto{
+    flex-direction: column;
+    padding-left: 40px;
+    margin: 20px 20px 20px 20px;
+}
+.texto h2{
+    padding-bottom: 20px;
+}

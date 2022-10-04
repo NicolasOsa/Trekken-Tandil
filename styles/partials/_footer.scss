@@ -1,0 +1,23 @@
+footer{
+    display: grid;
+    grid-template-columns: 80% min-content;
+    grid-template-rows: 80% min-content;
+    grid-template-areas:
+    "titulo img2"
+    "titulo img1";
+    }
+footer h3{
+    grid-area: titulo;
+}
+.instaico{
+    grid-area: img2;
+}
+.wappico{
+    grid-area: img1;
+}
+.instaico a{
+    color: black;    
+}
+.wappico a{
+    color: black;
+}

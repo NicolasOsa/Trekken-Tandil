@@ -1,0 +1,18 @@
+@media screen and (max-width:768px) {
+    .caja{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ANIMACIONES */
+
+.caja2{
+   transition: 1s;
+   transition-timing-function: ease;
+}
+.caja2:hover{
+    scale: 1.15;
+    color: rgb(226, 223, 220);
+
+}

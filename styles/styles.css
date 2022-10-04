@@ -36,9 +36,8 @@ header{
     display: inline;
     margin-right: 20px;
 }
-main{
-    
-}
+
+
 .trekkentandil{
     width: 90%;
     height: 200px;
@@ -160,27 +159,28 @@ main{
 
 footer{
     display: grid;
-    grid-template-columns: 80% min-content 1fr;
-    grid-template-rows: 80% min-content  1fr;
+    grid-template-columns: 80% min-content;
+    grid-template-rows: 80% min-content;
     grid-template-areas:
-    "titulo img2 tel"
-    "titulo img1 link";
+    "titulo img2"
+    "titulo img1";
     }
 footer h3{
     grid-area: titulo;
 }
-footer .finsta{
-    grid-area: img1;
-}
-footer a{
-    grid-area: link;
-}
-footer .fwapp{
+.instaico{
     grid-area: img2;
 }
-footer p{
-    grid-area: tel;
+.wappico{
+    grid-area: img1;
 }
+.instaico a{
+    color: black;    
+}
+.wappico a{
+    color: black;
+}
+
 
 /* MediaQueries */
 
