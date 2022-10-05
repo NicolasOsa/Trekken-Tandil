@@ -143,23 +143,25 @@ header {
 
 footer {
   display: grid;
-  grid-template-columns: 80% -webkit-min-content;
-  grid-template-columns: 80% min-content;
-  grid-template-rows: 80% -webkit-min-content;
-  grid-template-rows: 80% min-content;
-  grid-template-areas: "titulo img2" "titulo img1";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "titulo titulo" "img2 img1";
 }
 
-footer h3 {
+.footerTitulo {
   grid-area: titulo;
+  text-align: center;
 }
 
 .instaico {
   grid-area: img2;
+  text-align: end;
+  margin: 5px;
 }
 
-.wappico {
+.faceico {
   grid-area: img1;
+  margin: 5px;
 }
 
 .instaico a {

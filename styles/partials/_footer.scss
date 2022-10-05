@@ -1,19 +1,23 @@
 footer{
     display: grid;
-    grid-template-columns: 80% min-content;
-    grid-template-rows: 80% min-content;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
     grid-template-areas:
-    "titulo img2"
-    "titulo img1";
+    "titulo titulo"
+    "img2 img1";
     }
-footer h3{
+.footerTitulo{
     grid-area: titulo;
+    text-align: center;
 }
-.instaico{
+.instaico{ 
     grid-area: img2;
+    text-align: end;
+    margin: 5px;
 }
-.wappico{
+.faceico{
     grid-area: img1;
+    margin: 5px;
 }
 .instaico a{
     color: black;    
