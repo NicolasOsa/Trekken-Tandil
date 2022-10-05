@@ -43,7 +43,7 @@ header {
   margin-right: 20px;
 }
 
-.caja {
+.caja, .form {
   font-family: "Noto Serif", serif;
   width: 90%;
   background-color: rgb(62, 59, 65);
@@ -60,20 +60,20 @@ header {
   grid-template-areas: "imagen titulo" "imagen parrafo";
 }
 
-.caja.fotocaja {
+.caja.fotocaja, .fotocaja.form {
   grid-area: imagen;
 }
 
-.caja.texto h2 {
+.caja.texto h2, .texto.form h2 {
   grid-area: titulo;
 }
 
-.caja.texto p {
+.caja.texto p, .texto.form p {
   grid-area: parrafo;
   overflow: auto;
 }
 
-.caja p {
+.caja p, .form p {
   text-overflow: clip;
   line-height: 30px;
 }
@@ -191,7 +191,7 @@ footer h3 {
 }
 
 @media screen and (max-width: 768px) {
-  .caja {
+  .caja, .form {
     display: flex;
     flex-direction: column;
   }
