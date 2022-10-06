@@ -192,6 +192,19 @@ footer {
   font-size: 35px;
 }
 
+.tienda h2 {
+  padding: 1rem;
+}
+.tienda h3 {
+  padding: 1rem;
+}
+
+.tiendaProductos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 @media screen and (max-width: 768px) {
   .caja, .form {
     display: flex;

@@ -1,0 +1,14 @@
+.tienda{
+    h2{
+        padding: 1rem;        
+    }
+    h3{
+        padding: 1rem;
+    }
+}
+
+.tiendaProductos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
