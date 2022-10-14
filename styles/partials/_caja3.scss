@@ -4,8 +4,7 @@
         
     background-color: $colorCaja;
     padding: 25px 25px 25px 25px;
-    border-radius: 10px;
-    
+    border-radius: 10px;    
    
     padding-inline: 20px;  
     margin-top: 30px;
@@ -13,7 +12,7 @@
 
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 33% 33% 33%;
     grid-template-areas: 
     "titulo form1"
     "titulo form2"
@@ -30,7 +29,7 @@
 }
 .tiendaForm2{
     grid-area: form2;    
-    padding-left: 1rem;
+    padding: 1rem;
 }
 .tiendaForm3{
     grid-area: form3;
