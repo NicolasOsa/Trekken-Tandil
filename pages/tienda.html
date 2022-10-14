@@ -58,7 +58,11 @@
                 </h3>
                 <p>
                     $4.600
-                </p>              
+                </p>  
+                <form action="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" id="cantidad" style="background-color:rgb(177, 171, 171)">
+                </form>            
             </div>
             <div class="tiendaEuropetAC tienda_foto tienda_foto2">
                 <div><img src="../Imagenes/EuropetAC.jpg" width="300px" alt="Europet alimento complementario"></div>
@@ -68,6 +72,10 @@
                 <p>
                     $1.500
                 </p>
+                <form action="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" id="cantidad" style="background-color:rgb(177, 171, 171)">
+                </form>   
             </div>
             <div class="tiendaEuropetSL tienda_foto tienda_foto3">
                 <div><img src="../Imagenes/EuropetSL.jpg" width="300px" alt="Europet sustituto lacteo"></div>
@@ -77,6 +85,10 @@
                 <p>
                     $1.600
                 </p>
+                <form action="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" id="cantidad" style="background-color:rgb(177, 171, 171)">
+                </form>   
             </div>
 
         </section>
@@ -84,12 +96,23 @@
             <h2>
                 Medio de pago
             </h2>
-            <form action="efectivo" class="tiendaForm1">
+
+            <form action="nombre" class="tiendaForm1">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" style="background-color:rgb(177, 171, 171) ">
+            </form>
+            
+            <form action="tel" class="tiendaForm2">
+                <label for="tel">Telefono</label>
+                <input type="tel" id="tel" style="background-color:rgb(177, 171, 171) ">
+            </form>
+
+            <form action="efectivo" class="tiendaForm3">
                 <label for="efectivo">Pago en efectivo contra entrega</label>
                     <input type="checkbox" name="acepta" value="1">
             </form>   
 
-            <form action="tarjeta" class="tiendaForm2">
+            <form action="tarjeta" class="tiendaForm4">
                 <label for="tarjeta">Tarjeta de Credito</label>
                 <select name="tarjeta" id="tarjeta">
                     <option value="Elija su tarjeta" selected>Elija su tarjeta</option>
@@ -98,7 +121,7 @@
                     <option value="American">American Express</option>
                 </select>
             </form>    
-             <form action="button" class="tiendaForm3">
+             <form action="button" class="tiendaForm5">
                 <button>
                     <input type="button" value="Comprar">
                 </button>

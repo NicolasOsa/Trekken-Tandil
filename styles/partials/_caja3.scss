@@ -12,11 +12,13 @@
 
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     grid-template-areas: 
     "titulo form1"
     "titulo form2"
-    "titulo form3";   
+    "titulo form3"
+    "titulo form4"
+    "titulo form5";   
         
 }
 .caja3 h2{
@@ -33,5 +35,13 @@
 }
 .tiendaForm3{
     grid-area: form3;
+    padding: 1rem;    
+}
+.tiendaForm4{
+    grid-area: form4;
+    padding: 1rem;    
+}
+.tiendaForm5{
+    grid-area: form5;
     padding: 1rem;    
 }
