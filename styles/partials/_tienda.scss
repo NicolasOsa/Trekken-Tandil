@@ -1,14 +1,53 @@
 .tienda{
-    h2{
-        padding: 1rem;        
-    }
-    h3{
-        padding: 1rem;
+    h1{          
+        font-size: 2rem;
     }
 }
 
-.tiendaProductos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.tiendaProd{
+    @include tamano (90%, 5%, double);
+    font-family: 'Noto Serif', serif;        
+    background-color: $colorCaja;
+    padding: 25px 25px 25px 25px;
+    border-radius: 10px;    
+    padding-inline: 20px;  
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas: 
+    "imgT    imgAC    imgSL"
+    "prodT   prodAC   prodSL"
+    "precioT precioAC precioSL";   
 }
+.tiendaProd.tiendaTrekken img{
+    grid-area: imgT;
+}
+.tiendaProd.tiendaEuropetAC img{
+    grid-area: imgAC;
+}
+.tiendaProd.tiendaEuropetSL img{
+    grid-area: imgSL;
+}
+.tiendaProd.tiendaTrekken h3{
+    grid-area: prodT;
+}
+.tiendaProd.tiendaEuropetAC h3{
+    grid-area: prodAC;
+}
+.tiendaProd.tiendaEuropetSL h3{
+    grid-area: prodSL;
+}
+.tiendaProd.tiendaTrekken p{
+    grid-area: precioT;
+}
+.tiendaProd.tiendaEuropetAC p{
+    grid-area: precioAC;
+}
+.tiendaProd.tiendaEuropetSL p{
+    grid-area: precioSL;
+}
+

@@ -37,28 +37,77 @@
     </header>
     <hr>
     <main>
-        <section class="tienda">
-            <h2>
-                Elige los productos quieres
-            </h2>
-            <h3>
-                Envio a domicilio sin cargo
-            </h3>
-            <div class="tiendaProductos">
-                <div><img src="../Imagenes/bolsa trekken.jpg" width="300px" alt="bolsa trekken"></div>
-                <div><img src="../Imagenes/europet.jpg" width="300px" alt="Europet alimento complementario"></div>
-                <div><img src="../Imagenes/europet2.jpg" width="300px" alt="Europet sustituto lacteo"></div>
+        <section class="tienda caja">
+            <img src="../Imagenes/carrito.png" alt="carro de compras">
+        
+            <div class="texto">
+                <h1>
+                    Elige tus productos
+                </h1>
+                <h2>
+                    Recuerda que el envio es sin cargo!
+                </h2>
             </div>
 
         </section>
-        <section>
+        <section class="tiendaProd">            
+            <div class="tiendaTrekken tienda_foto tienda_foto1">
+                <div><img src="../Imagenes/bolsa_trekken.jpg" width="300px" alt="bolsa de alimento balanceado trekken"></div>  
+                <h3>
+                    Trekken 15Kg
+                </h3>
+                <p>
+                    $4.600
+                </p>              
+            </div>
+            <div class="tiendaEuropetAC tienda_foto tienda_foto2">
+                <div><img src="../Imagenes/EuropetAC.jpg" width="300px" alt="Europet alimento complementario"></div>
+                <h3>
+                    Europet Alimento Complementario 250 g
+                </h3>
+                <p>
+                    $1.500
+                </p>
+            </div>
+            <div class="tiendaEuropetSL tienda_foto tienda_foto3">
+                <div><img src="../Imagenes/EuropetSL.jpg" width="300px" alt="Europet sustituto lacteo"></div>
+                <h3>
+                    Europet Sustituto Lacteo 250 g
+                </h3>
+                <p>
+                    $1.600
+                </p>
+            </div>
+
+        </section>
+        <section class="caja3">
             <h2>
                 Medio de pago
             </h2>
-            <div>
-                
-            </div>
+            <form action="efectivo" class="tiendaForm1">
+                <label for="efectivo">Pago en efectivo contra entrega</label>
+                    <input type="checkbox" name="acepta" value="1">
+            </form>   
+
+            <form action="tarjeta" class="tiendaForm2">
+                <label for="tarjeta">Tarjeta de Credito</label>
+                <select name="tarjeta" id="tarjeta">
+                    <option value="Elija su tarjeta" selected>Elija su tarjeta</option>
+                    <option value="VISA">VISA</option>
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="American">American Express</option>
+                </select>
+            </form>    
+             <form action="button" class="tiendaForm3">
+                <button>
+                    <input type="button" value="Comprar">
+                </button>
+             </form>
+            
         </section>
+        <div class="subir">
+            <a href="../pages/tienda.html">Volver</a>
+        </div>
     </main>
     <hr>
     <footer>

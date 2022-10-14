@@ -2,5 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Source+Sans+Pro:wght@200;400;600;700;900&display=swap');
 
 body{
-    background-color: dimgray;
+    background-color: rgb(119, 118, 118);
+}
+
+
+.subir{
+    font-family: 'Noto Serif', serif;
+    padding-right: 100px;
+    text-align: right;
+    font-size: 1rem; 
+}
+.subir a{
+    text-decoration: none;
+    color: black;
+}
+//**extends**//
+
+$colorCaja: rgb(173, 171, 177);
+
+
+//** MIXIN**//
+
+@mixin tamano ($ancho, $margen, $borde) {
+    width: $ancho;
+    margin-inline: $margen;
+    border-style: $borde;
 }

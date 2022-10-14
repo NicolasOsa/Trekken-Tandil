@@ -1,11 +1,9 @@
 .caja{
+    @include tamano (90%, 5%, double);
     font-family: 'Noto Serif', serif;
-    width: 90%;    
-    background-color: rgb(62, 59, 65);
+    background-color: $colorCaja;
     padding: 25px 25px 25px 25px;
     border-radius: 10px;
-    border-style: double;
-    margin-inline: 5%;
     padding-inline: 20px;  
     margin-top: 30px;
     margin-bottom: 30px;

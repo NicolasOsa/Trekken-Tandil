@@ -1,0 +1,38 @@
+.caja3{
+    @include tamano (90%, 5%, double);
+    font-family: 'Noto Serif', serif;
+        
+    background-color: $colorCaja;
+    padding: 25px 25px 25px 25px;
+    border-radius: 10px;
+    
+   
+    padding-inline: 20px;  
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+    "titulo form1"
+    "titulo form2"
+    "titulo form3";   
+        
+}
+.caja3 h2{
+    grid-area: titulo;
+    
+}
+.tiendaForm1{
+    grid-area: form1;
+    padding: 1rem;
+}
+.tiendaForm2{
+    grid-area: form2;    
+    padding-left: 1rem;
+}
+.tiendaForm3{
+    grid-area: form3;
+    padding: 1rem;    
+}

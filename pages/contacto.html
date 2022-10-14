@@ -37,16 +37,21 @@
     </header>
     <hr>
     <main>
+        <section class="imagenContacto">
+            <img src="../Imagenes/publicidad.jpg" width="90%" alt="publicidad trekken alimento balanceado">
+        </section>
         <section class="form">
             <h2>
                 Nuestros datos
             </h2>
             <ul>
                 <li>
-                    <a href="https://web.whatsapp.com/" target="_blank"><img src="../Imagenes/whatsapp.jpg" width="30px" alt="logo whatsapp"></a>2494 611608
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="../Imagenes/whatsapp.jpg" width="25px" alt="logo whatsapp"></a>2494 611608
                 </li>
                 <li>trekkentandil@gmail.com</li>
-                <li>Tandil</li>
+                <li class="tandilMap">                   
+                   <a href="https://www.google.com/maps/place/Tandil,+Provincia+de+Buenos+Aires/@-37.3195228,-59.1427021,13z/data=!3m1!4b1!4m5!3m4!1s0x95911f9b2733946f:0xceef2c76899c202d!8m2!3d-37.3287999!4d-59.1367167" target="_blank">Tandil</a>                    
+                </li>
             </ul>
         </section>
         <section class="form">
@@ -57,19 +62,19 @@
                 <label for="Nombre">
                     Nombre
                 </label>        
-                <input type="text" id="Nombre">
+                <input type="text" id="Nombre" style="background-color:rgb(177, 171, 171) ">
                 <label for="Edad">
                     Edad
                 </label>        
-                <input type="number" id="Edad">
+                <input type="number" id="Edad" style="background-color:rgb(177, 171, 171) ">
                 <label for="Email">
                     Email
                 </label>        
-                <input type="email" id="Email">
+                <input type="email" id="Email" style="background-color: rgb(177, 171, 171)">
                 <br>
                 <br>
                 <label for="Consulta">                    
-                    <textarea name="Consulta" id="Consulta" cols="30" rows="5"></textarea>
+                    <textarea name="Consulta" id="Consulta" cols="50" rows="6" style="background-color: rgb(177, 171, 171)"></textarea>
                 </label>
                 <button type="submit">
                     Enviar
@@ -79,22 +84,22 @@
                 </button>
                 <br>
                 <br>
-                <h3>
+                <label>
                     Esta conforme con el servicio?
-                </h3>
+                </label>
                 <label for="si">
                     <input type="radio" name="sino" id="si"> Si
                 </label>        
                 <label for="no">
                     <input type="radio" name="sino" id="no"> No
                 </label>        
-                <label for="no se">
-                    <input type="radio" name="sino" id="no se"> No se
-                </label>   
+                
                 
             </form>
         </section>
-        
+        <div class="subir">
+            <a href="../pages/contacto.html">Volver</a>
+        </div>
     </main>
     <hr>
     <footer>
